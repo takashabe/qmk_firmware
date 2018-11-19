@@ -26,7 +26,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|  `   |           |  '   |------+------+------+------+------+--------|
  * | LShift | Z/L2 |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |   /  | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |  L1  | '/L1 | LAlt | LCmd |Esc/L1|                                       |Esc/L2| RCmd | RAlt |      |  L1  |
+ *   |  L1  |  L1  | LAlt | LCmd |  Esc |                                       |  Esc | RCmd | RAlt |      |  L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                        ,-------------.       ,---------------.
  *                                        |      | L1   |       | L1   |Ctrl/Esc|
@@ -40,20 +40,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [BASE] = LAYOUT_ergodox(  // layer 0 : default
         // left hand
-        KC_EQL,   KC_1,             KC_2,    KC_3,    KC_4,            KC_5, KC_NO,
-        KC_TAB,   KC_Q,             KC_W,    KC_E,    KC_R,            KC_T, KC_LBRC,
-        KC_LCTRL, KC_A,             KC_S,    KC_D,    KC_F,            KC_G,
-        KC_LSFT,  LT(MDIA,          KC_Z),   KC_X,    KC_C,            KC_V, KC_B, KC_GRV,
-        MO(SYMB), LT(SYMB,KC_QUOT), KC_LALT, KC_LGUI, LT(SYMB,KC_ESC),
+        KC_EQL,   KC_1,           KC_2,    KC_3,    KC_4,   KC_5, KC_NO,
+        KC_TAB,   KC_Q,           KC_W,    KC_E,    KC_R,   KC_T, KC_LBRC,
+        KC_LCTRL, KC_A,           KC_S,    KC_D,    KC_F,   KC_G,
+        KC_LSFT,  LT(MDIA, KC_Z), KC_X,    KC_C,    KC_V,   KC_B, KC_GRV,
+        MO(SYMB), SYMB,           KC_LALT, KC_LGUI, KC_ESC,
                                                       KC_NO,   MO(SYMB),
                                                                MO(MDIA),
                                               KC_SPC, KC_BSPC, KC_ESC,
         // right hand
-        KC_NO,    KC_6, KC_7,             KC_8,    KC_9,    KC_0,    KC_MINS,
-        KC_RBRC,  KC_Y, KC_U,             KC_I,    KC_O,    KC_P,    KC_BSLS,
-                  KC_H, KC_J,             KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-        KC_QUOT,  KC_N, KC_M,             KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
-                        LT(SYMB,KC_ESC),  KC_RGUI, KC_RALT, KC_NO,   MO(SYMB),
+        KC_NO,    KC_6, KC_7,   KC_8,    KC_9,    KC_0,    KC_MINS,
+        KC_RBRC,  KC_Y, KC_U,   KC_I,    KC_O,    KC_P,    KC_BSLS,
+                  KC_H, KC_J,   KC_K,    KC_L,    KC_SCLN, KC_QUOT,
+        KC_QUOT,  KC_N, KC_M,   KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,
+                        KC_ESC, KC_RGUI, KC_RALT, KC_NO,   MO(SYMB),
         MO(SYMB), KC_ESC,
         MO(MDIA),
         KC_NO,    KC_DEL, KC_ENT
