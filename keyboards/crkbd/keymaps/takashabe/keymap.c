@@ -62,33 +62,33 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LCTL,     A,     S,     D,     F,     G,                      H,     J,     K,     L,  SCLN,  QUOT,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT,     Z,     X,     C,     V,     B,                      N,     M,  COMM,   DOT,  SLSH,   ESC,\
+       LSFT,     Z,     X,     C,     V,     B,                      N,     M,  COMM,   DOT,  SLSH,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
+                                  GUIEI, LOWER,   SPC,      ENT, RAISE, GUIEI\
                               //`--------------------'  `--------------------'
   ),
 
   [_LOWER] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        TAB,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  BSPC,\
+        GRV,     1,     2,     3,     4,     5,                      6,     7,     8,     9,     0,  MINS,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LCTL,    F1,    F2,    F3,    F4,    F5,                   LEFT,  DOWN,    UP, RIGHT, XXXXX, XXXXX,\
+       LCTL,    F1,    F2,    F3,    F4,    F5,                  XXXXX,   ESC, XXXXX, XXXXX,   EQL,   GRV,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT,    F6,    F7,    F8,    F9,   F10,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
+       LSFT,    F6,    F7,    F8,    F9,   F10,                   RPRN,  RCBR, XXXXX, XXXXX,  MINS,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
+                                  GUIEI, LOWER,   SPC,      ENT, RAISE, GUIEI\
                               //`--------------------'  `--------------------'
   ),
 
   [_RAISE] = LAYOUT_kc( \
   //,-----------------------------------------.                ,-----------------------------------------.
-        TAB,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  BSPC,\
+       TILD,  EXLM,    AT,  HASH,   DLR,  PERC,                   CIRC,  AMPR,  ASTR,  LPRN,  RPRN,  MINS,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LCTL, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   MINS,   EQL,  LCBR,  RCBR,  PIPE,   GRV,\
+       LCTL,  LBRC,  RBRC,  LCBR,  RCBR,  UNDS,                   LEFT,  DOWN,    UP,  RGHT,  BSLS,  PIPE,\
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   UNDS,  PLUS,  LBRC,  RBRC,  BSLS,  TILD,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
+                                  GUIEI, LOWER,   SPC,      ENT, RAISE, GUIEI\
                               //`--------------------'  `--------------------'
   ),
 
@@ -100,7 +100,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LMOD,  LHUD,  LSAD,  LVAD, XXXXX, XXXXX,                  XXXXX, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, ALTKN \
+                                  GUIEI, LOWER,   SPC,      ENT, RAISE, GUIEI\
                               //`--------------------'  `--------------------'
   )
 };
