@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT,    F6,    F7,    F8,    F9,   F10,                   RPRN,  RCBR, XXXXX, XXXXX,  MINS,  RSFT,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, GUIEI\
+                                  GUIEI, LOWER,  LALT,     RALT, RAISE, GUIEI\
                               //`--------------------'  `--------------------'
   ),
 
@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
        LSFT, XXXXX, XXXXX, XXXXX, XXXXX, XXXXX,                   UNDS,  PLUS,  LBRC,  RBRC,  BSLS,  TILD,\
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
-                                  GUIEI, LOWER,   SPC,      ENT, RAISE, GUIEI\
+                                  GUIEI, LOWER,  LALT,     RALT, RAISE, GUIEI\
                               //`--------------------'  `--------------------'
   ),
 
